@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/form.css">
+    <script type="module" src="./src/main.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <main>  
+      <h1>Movies</h1>
+        <div class='big-grid-container' >
+          <section class="grid-container item">
+           <div id ='form'></div>
+             <form action="">
+               <div class="form-content" >
+                  <h2>Add Your Movie</h2>
+                  <label for="movie-title">Movie Title:</label>
+                  <input type="text" name="title" id="movie-title">
+                </div>
+
+              <div class="form-content">
+                 <label for="critic-score">Critic Score:</label>
+                 <input type="number" name="criticScore" id="critic-score">
+              </div>
+
+              <div class="form-content">
+                 <label for="audience-score">Audience Score:</label>
+                 <input type="number" name="audienceScore" id="audience-score">
+              </div>
+
+              <div class="form-content">
+                 <label for="domestic-gross">Domestic Gross:</label>
+                 <input type="number" name="domestic" id="domestic-gross">
+               </div>
+
+              <div>
+                 <label for="movie-genre">Movie Genre:</label>
+                 <select name="genre" id="movie-genre">
+                     <option value="Action">Action</option>
+                     <option value="Comedy">Comedy</option>
+                     <option value="Drama">Drama</option>
+                     <option value="Horror">Horror</option>
+                     <option value="Concert">Concert</option>
+                     <option value="Documentary">Documentary</option>
+                     <option value="Musical">Musical</option>
+                     <option value="Romance">Romancee</option>
+                     <option value="Sci-Fi">Sci-Fi</option>
+                     <option value="Thriller">Thriller</option>
+                  </select>
+                  <button>Add Movie</button>
+               </div>
+            </form>
+         </section>
+
+         <section>
+           <div id= 'all-movies' class="item item-span">
+             <ul id="movie-list" class="grid-container"></ul>
+           </div>
+           <button id="reset">Go Back To Default Movies</button>
+         </section>
+       </div>
+
+      <section id="chart-section">
+        <div class="chart-item">
+        <div id="myChart"></div>
+        <div id="myDonut"></div>
+        <div id="myDot"></div>
+      </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="./src/charts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>

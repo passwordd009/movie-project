@@ -4,5 +4,5 @@ export default defineConfig({
   // ...
   build: { outDir: '...'},
 
-  base: '/Movie-project/',
+  base: '/movie-project/',
 });
